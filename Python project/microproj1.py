@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.linalg import expm
 
-matrix = np.mat([[-12,12],[3,-3]])
+matrix = np.mat([[-3,3],[5,-5]])
 prec = 0.01
 
 exp = [expm(matrix * i * prec) for i in range(100)]
